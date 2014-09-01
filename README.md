@@ -16,3 +16,32 @@ Enhanced version should include more options:
 * ...
 
 Maybe there is a more generic approach on restriction (`rule sets`) ?
+
+We canshould be able to provide input from a JSON:
+
+`scheduler/fixtures/schedule.json`
+
+`````json
+{
+    [
+      "starts_at" "2014-08-25T04:30:00+02:00",
+      "ends_at" "2014-08-25T08:30:00+02:00"
+    ]
+}
+`````
+
+`scheduler/fixtures/workers.json`
+
+`````json
+{
+    "id": 1,
+    "name": "kalle saas",
+    "available": [
+        {
+            "wday": 0,
+            "starts_at": 800,
+            "ends_at": 1630
+        }
+    ]
+}
+`````
