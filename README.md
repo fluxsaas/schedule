@@ -17,7 +17,7 @@ Enhanced version should include more options:
 
 Maybe there is a more generic approach on restriction (`rule sets`) ?
 
-We canshould be able to provide input from a JSON:
+We should be able to provide input as JSON:
 
 `scheduler/fixtures/schedule.json`
 
