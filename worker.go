@@ -1,6 +1,6 @@
 // The Worker represents a specific user with preferenzes
 // and skillset
-package main
+package schedule
 
 type Worker struct {
 	Id        int
@@ -8,8 +8,9 @@ type Worker struct {
 	Available []DayRange
 }
 
-// check if a worker is available on a specific day
-// this is a strict check. partial overlapping is ignored for now.
-func (worker *Worker) IsAvailable(day DayRange) bool {
+// Checks if a worker is available on a specific day. (strict)
+// We do not use pointer (*Worker) because this method does not
+// mutate the receiving struct
+func (worker Worker) IsAvailable(day DayRange) bool {
 	return day.withinMany(worker.Available)
 }

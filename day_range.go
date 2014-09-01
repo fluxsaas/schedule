@@ -1,6 +1,6 @@
 // The DayRange represents specific time ranges (0-23)
 // and helper function
-package main
+package schedule
 
 type DayRange struct {
 	Wday     int // 0 - 6
@@ -9,7 +9,7 @@ type DayRange struct {
 }
 
 // check if day range is within other day range
-func (day *DayRange) within(other DayRange) bool {
+func (day DayRange) within(other DayRange) bool {
 	if day.Wday == other.Wday && day.StartsAt >= other.StartsAt && day.EndsAt <= other.EndsAt {
 		return true
 	}
@@ -17,7 +17,7 @@ func (day *DayRange) within(other DayRange) bool {
 }
 
 // check if one day range is within many day ranges
-func (day *DayRange) withinMany(days []DayRange) bool {
+func (day DayRange) withinMany(days []DayRange) bool {
 	for _, other := range days {
 		if day.within(other) {
 			return true
