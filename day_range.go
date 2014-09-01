@@ -1,4 +1,3 @@
-// TODO: Rename it, because DayRange is he day of the month.
 // The DayRange represents specific time ranges (0-23)
 // and helper function
 package main
