@@ -17,12 +17,12 @@ func TestIfWorkerIsWorker(t *testing.T) {
 func TestWorkerShouldBeAvailableOnDayRange(t *testing.T) {
 	day := DayRange{1, 800, 1600}
 	worker := Worker{1, "kalle", []DayRange{day}}
-	assert.True(t, worker.IsAvailable(day))
+	assert.True(t, worker.isAvailable(day))
 }
 
 func TestWorkerShouldNotBeAvailableOnDayRange(t *testing.T) {
 	day := DayRange{1, 800, 1600}
 	day2 := DayRange{1, 800, 1700}
 	worker := Worker{1, "kalle", []DayRange{day}}
-	assert.Equal(t, worker.IsAvailable(day2), false)
+	assert.Equal(t, worker.isAvailable(day2), false)
 }

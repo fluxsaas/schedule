@@ -1,0 +1,1 @@
+check doc.go for documentation.
