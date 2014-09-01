@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "name": "kalle saas",
+    "available": [
+        {
+            "wday": 0,
+            "starts_at": 800,
+            "ends_at": 1630
+        }
+    ]
+}
