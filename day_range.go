@@ -1,10 +1,10 @@
 package schedule
 
-// DayRange struct represents a time ranges on a wday
+// DayRange struct represents a time ranges on a Wday
 type DayRange struct {
-	Wday     int // 0 - 6
-	StartsAt int // 0 - 2359
-	EndsAt   int // 0 - 2359
+	Wday     int `json:"wday"`      // 0 - 6
+	StartsAt int `json:"starts_at"` // 0 - 2359
+	EndsAt   int `json:"ends_at"`   // 0 - 2359
 }
 
 // within checks if day range is within other day range

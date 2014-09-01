@@ -7,7 +7,7 @@ This first version implements following simple logic:
 
 1. collect all day ranges in schedule (aka `shifts`)
 
-2. iterate over each shift and assign the first available workers.
+2. iterate over each shift and assign the first Available workers.
 
 Enhanced version should include more options:
 
@@ -25,7 +25,7 @@ Enhanced version should include more options:
 
 Maybe there is a more generic approach on restriction (`rule sets`) ?
 
-We should be able to provide input as JSON:
+We should be able to provIde input as JSON:
 
 scheduler/fixtures/schedule.json
 
