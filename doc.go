@@ -40,17 +40,17 @@ scheduler/fixtures/schedule.json
 
 scheduler/fixtures/workers.json
 
-{
-    "id": 1,
-    "name": "kalle saas",
-    "available": [
-        {
-            "wday": 0,
-            "starts_at": 800,
-            "ends_at": 1630
-        }
-    ]
-}
+    {
+        "id": 1,
+        "name": "kalle saas",
+        "available": [
+            {
+                "wday": 0,
+                "starts_at": 800,
+                "ends_at": 1630
+            }
+        ]
+    }
 
 
 Generate local godoc with
